@@ -5,6 +5,7 @@
 
 Мой сайт-портфолио с различными проектами. В моем сайте используются такие языки как HTML, JS(vanilla), CSS (с подключенным фреймворком Bootstrap). 
 * В v.1.0 на моем сайте представлено 2 проекта: колесо-фортуны и генератор рандомного номера телефона.
+* В v.1.0.1 отредактировал код с помощью редактора Prettier и убрал ненужные строчки с помощью расширения eslint + изменил описание на английском
 _______________________
 Что планирую добавить:
 1. Новый проект, который бы показывал погоду на сайте ☀️🌧️
@@ -13,7 +14,9 @@ _______________________
 
 # |EN|
 
-My website is a portfolio site with various projects. My site uses such languages as HTML, JS(vanilla), CSS (with Bootstrap framework connected). The site at the moment presented two projects, a wheel of fortune and random phone number generator.
+My website is a portfolio site with various projects. My site uses such languages as HTML, JS(vanilla), CSS (with Bootstrap framework connected). 
+* In v.1.0 there are 2 projects on my site: a fortune wheel and a random phone number generator.
+* In v.1.0.1 I edited code with Prettier editor and removed unnecessary lines with eslint extension + changed description in English
 _______________________
 What I plan to add:
 1. New project to display weather on ☀️🌧️
