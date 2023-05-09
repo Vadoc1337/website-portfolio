@@ -1,166 +1,172 @@
 <!DOCTYPE html>
 <html lang="ru en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Генератор номера телефона</title>
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-			crossorigin="anonymous"
-		/>
-		<style>
-			html,
-			body {
-				height: 100%;
-				margin: 0;
-				padding: 0;
-			}
-			.generator {
-				height: 100%;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				flex-direction: column;
-				position: relative;
-			}
-			#generateBtn {
-				padding: 10px;
-				font-size: 20px;
-				border-radius: 5px;
-				background-color: #2196f3;
-				color: #fff;
-				cursor: pointer;
-			}
-			.action-btn {
-				padding: 10px;
-				font-size: 20px;
-				border-radius: 5px;
-				background-color: #2196f3;
-				color: #fff;
-				cursor: pointer;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-			}
-			p {
-				color: #686d79;
-				font-weight: 800;
-				font-size: 25px;
-			}
-			p2 {
-				color: black;
-				font-weight: 800;
-				font-size: 25px;
-			}
-			#fullscreen {
-				position: fixed;
-				top: 0;
-				left: 0;
-				height: 100%;
-				width: 100%;
-				background-color: rgba(0, 0, 0, 0.8);
-				display: none;
-				z-index: 1;
-			}
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Генератор номера телефона</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+            crossorigin="anonymous"
+        />
+        <style>
+            html,
+            body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            .generator {
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                position: relative;
+            }
+            #generateBtn {
+                padding: 10px;
+                font-size: 20px;
+                border-radius: 5px;
+                background-color: #2196f3;
+                color: #fff;
+                cursor: pointer;
+            }
+            .action-btn {
+                padding: 10px;
+                font-size: 20px;
+                border-radius: 5px;
+                background-color: #2196f3;
+                color: #fff;
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            p {
+                color: #686d79;
+                font-weight: 800;
+                font-size: 25px;
+            }
+            p2 {
+                color: black;
+                font-weight: 800;
+                font-size: 25px;
+            }
+            #fullscreen {
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.8);
+                display: none;
+                z-index: 1;
+            }
 
-			#fullscreen img {
-				max-height: 100%;
-				max-width: 100%;
-				margin: auto;
-				display: block;
-				position: absolute;
-				top: 0;
-				left: 0;
-				bottom: 0;
-				right: 0;
-			}
-			#yesButton,
-			#noButton {
-				display: inline-flex;
-				margin: 25px;
-				padding: 10px 20px;
-				font-size: 24px;
-			}
-		</style>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-			crossorigin="anonymous"
-		></script>
-		<link
-			rel="apple-touch-icon"
-			sizes="180x180"
-			href="Photos_and_differentfiles/apple-touch-icon.png"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="Photos_and_differentfiles/favicon-32x32.png"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="16x16"
-			href="Photos_and_differentfiles/favicon-16x16.png"
-		/>
-		<link rel="manifest" href="Photos_and_differentfiles/site.webmanifest" />
-	</head>
-	<body>
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<div class="container">
-				<a class="navbar-brand p-0" href="index.html">
-					<img
-						src="Photos_and_differentfiles/Lobanoff.png"
-						alt="LogoВо Вадима"
-						width="125"
-					/>
-				</a>
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarNav"
-					aria-controls="navbarNav"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav">
-						<li class="nav-item">
-							<a class="nav-link" aria-current="page" href="index.html"
-								>Главная</a
-							>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="about_me.html">Обо мне</a>
-						</li>
-						<li class="nav-item">
-							<a
-								class="nav-link active"
-								aria-current="page"
-								href="myprojects.html"
-								>Мои проекты</a
-							>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-		<div class="generator">
-			<button id="generateBtn">Выбрать номер телефона</button>
-			<div id="fullscreen">
-				<img
-					src="Photos_and_differentfiles/прикол.jpg"
-					alt="Fullscreen Image"
-				/>
-			</div>
-		</div>
-		<script src="JS/randomnumber.js"></script>
-	</body>
+            #fullscreen img {
+                max-height: 100%;
+                max-width: 100%;
+                margin: auto;
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+            }
+            #yesButton,
+            #noButton {
+                display: inline-flex;
+                margin: 25px;
+                padding: 10px 20px;
+                font-size: 24px;
+            }
+        </style>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"
+        ></script>
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="Photos_and_differentfiles/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="Photos_and_differentfiles/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="Photos_and_differentfiles/favicon-16x16.png"
+        />
+        <link
+            rel="manifest"
+            href="Photos_and_differentfiles/site.webmanifest"
+        />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand p-0" href="index.html">
+                    <img
+                        src="Photos_and_differentfiles/Lobanoff.png"
+                        alt="LogoВо Вадима"
+                        width="125"
+                    />
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                aria-current="page"
+                                href="index.html"
+                                >Главная</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about_me.html">Обо мне</a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active"
+                                aria-current="page"
+                                href="myprojects.html"
+                                >Мои проекты</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="generator">
+            <button id="generateBtn">Выбрать номер телефона</button>
+            <div id="fullscreen">
+                <img
+                    src="Photos_and_differentfiles/прикол.jpg"
+                    alt="Fullscreen Image"
+                />
+            </div>
+        </div>
+        <script src="JS/randomnumber.js"></script>
+    </body>
 </html>
