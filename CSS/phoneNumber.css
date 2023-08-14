@@ -1,0 +1,87 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.generator {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+#generateBtn {
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #2196f3;
+    color: #fff;
+    cursor: pointer;
+}
+.action-btn {
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #2196f3;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+p {
+    color: #686d79;
+    font-weight: 800;
+    font-size: 1.5625rem;
+}
+p2 {
+    color: black;
+    font-weight: 800;
+    font-size: 25px;
+}
+#fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    z-index: 1;
+}
+
+#fullscreen img {
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+#yesButton,
+#noButton {
+    display: inline-flex;
+    margin: 25px;
+    padding: 10px 20px;
+    font-size: 24px;
+}
+#logo {
+    position: relative;
+    right: 19%;
+}
+#question {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    bottom: 30vh;
+    left: 70vw;
+}
+#meme {
+    width: 100%;
+}

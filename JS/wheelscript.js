@@ -21,7 +21,7 @@ var fakePrizes = [
         color: "hsl(12 76% 61%)",
     },
     {
-        text: "100 лучших шлюх",
+        text: "Бентли",
         color: "hsl(350 60% 52%)",
     },
     {
