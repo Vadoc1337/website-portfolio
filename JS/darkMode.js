@@ -4,9 +4,9 @@ let themesIndex = parseInt(localStorage.getItem("darkModeToggler")) || 0;
 function iconsChanger() {
     const imgElement = document.getElementById("darkModeToggler");
     if (themes[themesIndex] === "light") {
-        imgElement.src = "/Photos_and_differentfiles/moon.png";
+        imgElement.src = "Photos_and_differentfiles/moon.png";
     } else {
-        imgElement.src = "/Photos_and_differentfiles/sun.png";
+        imgElement.src = "Photos_and_differentfiles/sun.png";
     }
 }
 
