@@ -116,7 +116,6 @@
 /* кнопка запуска колеса */
 .btn-spin {
     color: white;
-    background: black;
     border: none;
     /* берём размер шрифта такой же, как в колесе */
     font-size: inherit;
