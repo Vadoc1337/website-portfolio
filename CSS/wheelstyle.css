@@ -92,6 +92,7 @@
     transform: rotate(var(--rotate));
     /* запрещаем пользователю выделять мышкой текст на секторах */
     user-select: none;
+    color: #252b30;
 }
 
 /* язычок */
@@ -152,14 +153,14 @@
         transform: rotate(-12deg);
     }
 }
-
+/** вырезанная фича  **/
 /* анимируем выпавший сектор */
-.prize.selected .text {
-    /* делаем текст белым */
-    color: white;
-    /* настраиваем длительность анимации */
-    animation: selected 800ms ease;
-}
+/* .prize.selected .text { */
+/* делаем текст белым */
+/* color: white; */
+/* настраиваем длительность анимации */
+/* animation: selected 800ms ease;
+} */
 
 /* настраиваем анимацию текста на выпавшем секторе по кадрам */
 @keyframes selected {

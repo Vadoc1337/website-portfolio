@@ -10,10 +10,13 @@
             integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="CSS/style.css" />
+        <link rel="stylesheet" href="CSS/darkMode.css" />
         <style>
-            .card {
-                border-radius: 1em;
-                text-align: center;
+            #magistr {
+                margin-top: 4px;
+                border-top-left-radius: unset;
+                border-top-right-radius: unset;
             }
         </style>
         <script
@@ -51,6 +54,7 @@
                         src="Photos_and_differentfiles/Lobanoff.png"
                         alt="LogoВо Вадима"
                         width="125"
+                        id="logo"
                     />
                 </a>
                 <button
@@ -64,6 +68,11 @@
                 >
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <img
+                    src="Photos_and_differentfiles/sun.png"
+                    alt="sun"
+                    id="darkModeToggler"
+                />
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
@@ -99,14 +108,23 @@
                             <img
                                 src="Photos_and_differentfiles/Диплом.JPG"
                                 class="card-img-top"
-                                alt="Вручение диплома"
+                                alt="Вручение диплома бакалавра"
+                            />
+                            <img
+                                src="Photos_and_differentfiles/Магистр.jpeg"
+                                alt="Вручение диплома магистра"
+                                class="card-img-top"
+                                id="magistr"
                             />
                             <div class="card-body">
                                 <h5 class="card-title">Высшее образование</h5>
                                 <p class="card-text">
-                                    Окончил НГУ в 2021 году. Учился весьма
-                                    успешно, декан даже пожал руку на вручении
-                                    диплома.
+                                    Окончил бакалавриат Новосибирского
+                                    Государственного Университета в 2021 году а
+                                    также магистратуру в 2023 году. Учился
+                                    весьма успешно, декан даже пожал руку на
+                                    вручении диплома. За магистратуру имеется
+                                    красный.
                                 </p>
                             </div>
                         </div>
@@ -126,8 +144,8 @@
                                     как и для многих, жизнь кардинально
                                     поменялась. Было принято решение идти на
                                     Фронт End. Соответственно, купил макбук,
-                                    заказал кофе, и начал усиленно изучать JS,
-                                    HTML, CSS, также попутно делал собственные
+                                    заказал кофе и начал усиленно изучать JS,
+                                    HTML, CSS, React, также попутно делал разные
                                     проекты и оттачивал свои навыки.
                                 </p>
                             </div>
@@ -142,10 +160,10 @@
                             />
                             <div class="card-body">
                                 <h5 class="card-title">
-                                    И вот, набравшись первичных знаний...
+                                    И вот, набравшись знаний...
                                 </h5>
                                 <p class="card-text">
-                                    Я решил что пора пробовать войти в IT.
+                                    Я решил, что пора пробовать войти в IT.
                                     Поэтому, при нажатии на кнопку ниже, можно
                                     будет увидеть те проекты, которые я сделал
                                     за время своего обучения.
@@ -162,5 +180,6 @@
                 </div>
             </div>
         </main>
+        <script src="JS/darkMode.js"></script>
     </body>
 </html>
