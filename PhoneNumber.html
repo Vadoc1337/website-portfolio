@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Генератор номера телефона</title>
+        <title id="lng-phone-number">Генератор номера телефона</title>
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
             rel="stylesheet"
@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="CSS/style.css" />
         <link rel="stylesheet" href="CSS/darkMode.css" />
         <link rel="stylesheet" href="CSS/phoneNumber.css" />
+        <link rel="stylesheet" href="CSS/languages.css" />
         <style>
             @media (max-width: 380px) and (min-width: 349px) {
                 p {
@@ -30,6 +31,10 @@
             integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
             crossorigin="anonymous"
         ></script>
+        <script src="JS/text.js" defer></script>
+        <script src="JS/languageApp.js" defer></script>
+        <script src="JS/randomnumber.js" defer></script>
+        <script src="JS/darkMode.js" defer></script>
         <link
             rel="apple-touch-icon"
             sizes="180x180"
@@ -63,6 +68,11 @@
                         id="logo"
                     />
                 </a>
+                <img
+                    src="Photos_and_differentfiles/ru_icon.png"
+                    alt="russian language"
+                    id="languageToggler"
+                />
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -86,17 +96,24 @@
                                 class="nav-link"
                                 aria-current="page"
                                 href="index.html"
+                                id="lng-main-page"
                                 >Главная</a
                             >
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about_me.html">Обо мне</a>
+                            <a
+                                class="nav-link"
+                                href="about_me.html"
+                                id="lng-about-me"
+                                >Обо мне</a
+                            >
                         </li>
                         <li class="nav-item">
                             <a
                                 class="nav-link active"
                                 aria-current="page"
                                 href="myprojects.html"
+                                id="lng-my-projects"
                                 >Мои проекты</a
                             >
                         </li>
@@ -105,10 +122,10 @@
             </div>
         </nav>
         <main class="generator">
-            <button id="generateBtn">Выбрать номер телефона</button>
+            <button id="lng-generateBtn">Выбрать номер телефона</button>
             <div id="fullscreen">
                 <img
-                    src="Photos_and_differentfiles/прикол.jpg"
+                    src="Photos_and_differentfiles/маленькость.jpg"
                     alt="Fullscreen Image"
                 />
             </div>
@@ -139,7 +156,5 @@
                 </div>
             </div>
         </aside>
-        <script src="JS/randomnumber.js"></script>
-        <script src="JS/darkMode.js"></script>
     </body>
 </html>

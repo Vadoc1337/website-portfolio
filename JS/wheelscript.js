@@ -1,80 +1,160 @@
+let language = localStorage.getItem("selectedLanguage") || "en";
 // надписи и цвета на секторах
-var fakePrizes = [
-    {
-        text: "1000000 $",
-        color: "hsl(197 30% 43%)",
-    },
-    {
-        text: "Ламба",
-        color: "hsl(173 58% 39%)",
-    },
-    {
-        text: "Яхта",
-        color: "hsl(43 74% 66%)",
-    },
-    {
-        text: "Поместье в Америке",
-        color: "hsl(27 87% 67%)",
-    },
-    {
-        text: "Тонна золота",
-        color: "hsl(12 76% 61%)",
-    },
-    {
-        text: "Бентли",
-        color: "hsl(350 60% 52%)",
-    },
-    {
-        text: "Пентхаус",
-        color: "hsl(91 43% 54%)",
-    },
-    {
-        text: "100 битков",
-        color: "hsl(140 36% 74%)",
-    },
-    {
-        text: "Проигрыш",
-        color: "hsl(10 36% 74%)",
-    },
-];
-var truePrizes = [
-    {
-        text: "Упс, проигрыш",
-        color: "hsl(197 30% 43%)",
-    },
-    {
-        text: "Упс, проигрыш",
-        color: "hsl(173 58% 39%)",
-    },
-    {
-        text: "Упс, проигрыш",
-        color: "hsl(43 74% 66%)",
-    },
-    {
-        text: "Упс, проигрыш",
-        color: "hsl(27 87% 67%)",
-    },
-    {
-        text: "Упс, проигрыш",
-        color: "hsl(12 76% 61%)",
-    },
-    {
-        text: "Упс, проигрыш",
-        color: "hsl(350 60% 52%)",
-    },
-    {
-        text: "Упс, проигрыш",
-        color: "hsl(91 43% 54%)",
-    },
-    {
-        text: "Упс, проигрыш",
-        color: "hsl(140 36% 74%)",
-    },
-    {
-        text: "Упс, проигрыш",
-        color: "hsl(10 36% 74%)",
-    },
-];
+if (language === "ru") {
+    var fakePrizes = [
+        {
+            text: "1000000 $",
+            color: "hsl(197 30% 43%)",
+        },
+        {
+            text: "Ламба",
+            color: "hsl(173 58% 39%)",
+        },
+        {
+            text: "Яхта",
+            color: "hsl(43 74% 66%)",
+        },
+        {
+            text: "Поместье в Америке",
+            color: "hsl(27 87% 67%)",
+        },
+        {
+            text: "Тонна золота",
+            color: "hsl(12 76% 61%)",
+        },
+        {
+            text: "Бентли",
+            color: "hsl(350 60% 52%)",
+        },
+        {
+            text: "Пентхаус",
+            color: "hsl(91 43% 54%)",
+        },
+        {
+            text: "100 битков",
+            color: "hsl(140 36% 74%)",
+        },
+        {
+            text: "Проигрыш",
+            color: "hsl(10 36% 74%)",
+        },
+    ];
+    var truePrizes = [
+        {
+            text: "Упс, проигрыш",
+            color: "hsl(197 30% 43%)",
+        },
+        {
+            text: "Упс, проигрыш",
+            color: "hsl(173 58% 39%)",
+        },
+        {
+            text: "Упс, проигрыш",
+            color: "hsl(43 74% 66%)",
+        },
+        {
+            text: "Упс, проигрыш",
+            color: "hsl(27 87% 67%)",
+        },
+        {
+            text: "Упс, проигрыш",
+            color: "hsl(12 76% 61%)",
+        },
+        {
+            text: "Упс, проигрыш",
+            color: "hsl(350 60% 52%)",
+        },
+        {
+            text: "Упс, проигрыш",
+            color: "hsl(91 43% 54%)",
+        },
+        {
+            text: "Упс, проигрыш",
+            color: "hsl(140 36% 74%)",
+        },
+        {
+            text: "Упс, проигрыш",
+            color: "hsl(10 36% 74%)",
+        },
+    ];
+} else {
+    fakePrizes = [
+        {
+            text: "1000000 $",
+            color: "hsl(197 30% 43%)",
+        },
+        {
+            text: "Lambo",
+            color: "hsl(173 58% 39%)",
+        },
+        {
+            text: "Yacht",
+            color: "hsl(43 74% 66%)",
+        },
+        {
+            text: "An estate in USA",
+            color: "hsl(27 87% 67%)",
+        },
+        {
+            text: "A ton of gold",
+            color: "hsl(12 76% 61%)",
+        },
+        {
+            text: "Bentley",
+            color: "hsl(350 60% 52%)",
+        },
+        {
+            text: "Penthouse",
+            color: "hsl(91 43% 54%)",
+        },
+        {
+            text: "100 bitcoins",
+            color: "hsl(140 36% 74%)",
+        },
+        {
+            text: "Lose",
+            color: "hsl(10 36% 74%)",
+        },
+    ];
+    truePrizes = [
+        {
+            text: "Oops, you lose",
+            color: "hsl(197 30% 43%)",
+        },
+        {
+            text: "Oops, you lose",
+            color: "hsl(173 58% 39%)",
+        },
+        {
+            text: "Oops, you lose",
+            color: "hsl(43 74% 66%)",
+        },
+        {
+            text: "Oops, you lose",
+            color: "hsl(27 87% 67%)",
+        },
+        {
+            text: "Oops, you lose",
+            color: "hsl(12 76% 61%)",
+        },
+        {
+            text: "Oops, you lose",
+            color: "hsl(350 60% 52%)",
+        },
+        {
+            text: "Oops, you lose",
+            color: "hsl(91 43% 54%)",
+        },
+        {
+            text: "Oops, you lose",
+            color: "hsl(140 36% 74%)",
+        },
+        {
+            text: "Oops, you lose",
+            color: "hsl(10 36% 74%)",
+        },
+    ];
+}
 // создаём переменные для быстрого доступа ко всем объектам на странице — блоку в целом, колесу, кнопке и язычку
 const wheel = document.querySelector(".deal-wheel");
 const spinner = wheel.querySelector(".spinner");
@@ -82,9 +162,14 @@ const trigger = wheel.querySelector(".btn-spin");
 const ticker = wheel.querySelector(".ticker");
 
 function alertFunc() {
-    alert(
-        "ПОЗДРАВЛЯЮ, ТЫ ВСЕ ПРОИГРАЛ :). ПЕРЕЗАГРУЗИ СТРАНИЦУ ЧТОБЫ ОТЫГРАТЬСЯ"
-    );
+    if (language === "ru") {
+        alert(
+            "ПОЗДРАВЛЯЮ, ТЫ ВСЕ ПРОИГРАЛ :). ПЕРЕЗАГРУЗИ СТРАНИЦУ ЧТОБЫ ОТЫГРАТЬСЯ"
+        );
+    } else
+        alert(
+            "CONGRATULATIONS, YOU LOST EVERYTHING :). RELOAD THE PAGE TO WIN BACK"
+        );
 }
 function loserFunction() {
     setTimeout(alertFunc, 1100);
@@ -260,7 +345,11 @@ spinner.addEventListener("transitionend", () => {
     // отправляем в CSS новое положение поворота колеса
     spinner.style.setProperty("--rotate", rotation);
     // делаем кнопку снова активной
-    trigger.disabled = false;
+    if (language === "ru") {
+        trigger.textContent = "СТАВИТЬ БОЛЬШЕ НЕЧЕГО";
+    } else {
+        trigger.textContent = "THERE'S NOTHING ELSE TO BET";
+    }
 });
 
 // подготавливаем всё к первому запуску

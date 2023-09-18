@@ -1,9 +1,10 @@
+let language = localStorage.getItem("selectedLanguage") || "en";
 // Объявляет постоянную переменную generator и присваивает ей значение первого элемента DOM,
 // который соответствует CSS-селектору ".generator".
 const generator = document.querySelector(".generator");
 // Объявляет постоянную переменную generateBtn и присваивает ей значение
 // элемента DOM с идентификатором "generateBtn".
-const generateBtn = document.querySelector("#generateBtn");
+const generateBtn = document.querySelector("#lng-generateBtn");
 // Определяет функцию generateRandomNumbers, которая генерирует случайный 11-значный номер телефона и добавляет его
 // вместе с текстом а также создает две кнопки ("Да" и "Нет") к элементу generator в DOM.
 function generateRandomNumbers() {
@@ -16,8 +17,21 @@ function generateRandomNumbers() {
     ).join("");
     // Создает новый элемент p, устанавливает его текстовое содержимое:
     // "Это верный номер телефона? ", и добавляет его к элементу generator в DOM.
+    const textContent = {
+        en: {
+            question: "Is this the correct phone number?",
+            yesButton: "Yes",
+            noButton: "No",
+        },
+        ru: {
+            question: "Это верный номер телефона? ",
+            yesButton: "Да",
+            noButton: "Нет",
+        },
+    };
+    const changeText = textContent[language];
     const text = document.createElement("p");
-    text.textContent = "Это верный номер телефона? ";
+    text.textContent = changeText.question;
     generator.appendChild(text);
     // Создает новый элемент p2, добавляет в качестве текста сгенерированный выше в функции номер телефона
     // а затем добавляет его к элементу генератора в DOM.
@@ -33,12 +47,12 @@ function generateRandomNumbers() {
 
     const yesBtn = document.createElement("button");
     yesBtn.id = "yesButton";
-    yesBtn.textContent = "Да";
+    yesBtn.textContent = changeText.yesButton;
     btnGenerator.appendChild(yesBtn);
 
     const noBtn = document.createElement("button");
     noBtn.id = "noButton";
-    noBtn.textContent = "Нет";
+    noBtn.textContent = changeText.noButton;
     btnGenerator.appendChild(noBtn);
     // скрывает элемент generateBtn в DOM.
     generateBtn.style.display = "none";
@@ -53,11 +67,11 @@ function generateRandomNumbers() {
     // Добавляет слушатель события щелчка по кнопке "Да", который устанавливает свойство display элемента
     // fullscreen в "block" через 600 миллисекунд, воспроизводит аудиофайл и скрывает элемент генератора.
     // затем выскакивает скример :))
+    let audio = new Audio("Photos_and_differentfiles/sound.mp3");
     yesBtn.addEventListener("click", () => {
         setTimeout(() => {
             fullscreen.style.display = "block";
-        }, 600);
-        let audio = new Audio("Photos_and_differentfiles/sound.mp3");
+        }, 100);
         audio.play();
     });
 }
