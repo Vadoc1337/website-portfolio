@@ -33,7 +33,7 @@ function changeLanguage() {
     let lang = getCurrentLanguage();
     Object.keys(langArr).forEach((key) => {
         let elem = document.getElementById("lng-" + key);
-        if (elem) {
+        if (elem && langArr[key][lang] !== undefined) {
             elem.innerHTML = langArr[key][lang];
         }
     });

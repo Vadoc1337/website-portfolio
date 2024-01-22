@@ -84,6 +84,18 @@ const langArr = {
         ru: "Ну что, сыграем в игру :)",
         en: "So, let's play a game :)",
     },
+    "notary-website": {
+        ru: "Сайт нотариуса",
+        en: "Notary website",
+    },
+    "site-btn": {
+        ru: "Сайт",
+        en: "Site",
+    },
+    "git-btn": {
+        ru: "Гит",
+        en: "Git",
+    },
     "button-bet": {
         ru: "СТАВЛЮ НА КОН ВСЕ ЧТО У МЕНЯ ЕСТЬ",
         en: "I'M PUTTING EVERYTHING I HAVE ON THE LINE",
