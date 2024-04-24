@@ -10,7 +10,7 @@
 * В v1.0.2 добавил семантические теги в html файлы и сделал адаптивную верстку для колеса фортуны.
 * В v1.0.3 добавил ночной режим, подправил много строчек кода, а также добавил пояснение к генератору номера телефона.
 * В v1.0.4 был добавлен английский язык, был немного изменен генератор номера телефона и также был исправлен код.
-* В v1.1 добавил еще 2 проекта над которыми я работал. Комерческий -  [сайт нотариуса](notarymen.ru) и домашний пет-проект [магазина суши](https://sushi-heaven.vercel.app) написанный на реакте. Также мною был в значительной 
+* В v1.1 добавил еще 2 проекта над которыми я работал. Комерческий -  [сайт нотариуса](https://notarymen.ru) и домашний пет-проект [магазина суши](https://sushi-heaven.vercel.app) написанный на реакте. Также мною был в значительной 
   степени 
   отрефакторен имеющийся код и изменена информация обо мне. 
 
@@ -35,7 +35,8 @@ My website is a portfolio site with various projects. My site uses such language
 * In v1.0.2 I added semantic tags to html files and made adaptive layout for wheel of fortune.
 * In v1.0.3 I added night mode, tweaked a lot of lines of code, and also added an explanation to the phone number generator
 * In v1.0.4, the English language was added, the phone number generator was slightly changed and the code was also fixed.
-* In v1.1 I added 2 more projects I've been working on. Commercial - [Notary Website](notarymen.ru) and home pet project [Sushi Shop](https://sushi-heaven.vercel.app) written on React. I also largely refactored existing code and changed 
+* In v1.1 I added 2 more projects I've been working on. Commercial - [Notary Website](https://notarymen.ru) and home pet project [Sushi Shop](https://sushi-heaven.vercel.app) written on React. I also largely refactored existing code and 
+  changed 
   information about me.
 
 _______________________
