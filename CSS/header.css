@@ -1,0 +1,29 @@
+#logo {
+    position: relative;
+    right: 19%;
+    bottom: 0.5rem;
+}
+
+#languageToggler {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 1.9rem;
+    right: 2.25em;
+}
+
+#languageToggler:hover {
+    cursor: pointer;
+}
+
+#darkModeToggler {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 1.9rem;
+    right: 0.6rem;
+}
+
+#darkModeToggler:hover {
+    cursor: pointer;
+}

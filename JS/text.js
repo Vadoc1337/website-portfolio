@@ -28,7 +28,7 @@ const langArr = {
         ru: "Профиль на LinkedIn",
         en: "Profile on LinkedIn",
     },
-    "higher-education": {
+    "higher-education-title": {
         ru: "Высшее образование",
         en: "Higher education",
     },
@@ -36,33 +36,32 @@ const langArr = {
         ru: "Информация обо мне",
         en: "Information about me",
     },
-    "about-higher-education": {
-        ru: " Окончил бакалавриат Новосибирского Государственного Университета в 2021 году а также магистратуру в 2023 году. Учился весьма успешно, декан даже пожал руку на вручении диплома. За магистратуру имеется красный.",
-        en: "Graduated with a Bachelor's degree from Novosibirsk State University in 2021 and a Master's degree in 2023. Studied very successfully, the dean even shook hands at the awarding of diplomas. For the master's program I received a red one.",
+    "higher-education": {
+        ru: `Свою корочку получил в Новосибирском
+        Государственном Университете. Учился весьма
+        успешно, за магистратуру имеется красный диплом и
+        удачная фоточка с деканом :)`,
+        en: `I got my higher education at Novosibirsk State University. I studied very successfully, I have a red diploma for my master's degree and a good photo with the dean :)`,
     },
-    "work-experience": {
+    "work-experience-title": {
         ru: "Опыт работы",
         en: "Work experience",
     },
-    "about-work-experience": {
+    "work-experience": {
         ru: "После получения диплома отработал год по своей специальности, затем осенью 2022 года, как и для многих, жизнь кардинально поменялась. Было принято решение идти на Фронт End. Соответственно, купил макбук, заказал кофе и начал усиленно изучать JS, HTML, CSS, React, также попутно делал разные проекты и оттачивал свои навыки.",
         en: "After receiving my degree, I worked a year in my major, then in the fall of 2022, as for many, life changed dramatically. The decision was made to go to Front End. Accordingly, I bought a macbook, ordered a coffee and started to study JS, HTML, CSS, React intensively, also doing different projects and honing my skills.",
     },
-    "educated": {
+    "educated-title": {
         ru: "И вот, набравшись знаний...",
         en: "And so, having gained knowledge...",
     },
-    "about-educated": {
+    "education": {
         ru: "Я решил, что пора пробовать войти в IT. Поэтому, при нажатии на кнопку ниже, можно будет увидеть те проекты, которые я сделал за время своего обучения.",
         en: "I decided it was time to try and get into IT. So, if you click on the button below, you can see the projects I have done during my studies.",
     },
     "rabbit-hole": {
         ru: "Нажмешь сюда, покажу глубока ли кроличья нора :)",
         en: "Click here, I'll show you how deep the rabbit hole goes :)",
-    },
-    "projects": {
-        ru: "Мои проекты",
-        en: "My projects",
     },
     "phone-generator": {
         ru: "Генератор номера телефона (с сюрпризом)",
@@ -80,7 +79,7 @@ const langArr = {
         ru: "Испытать удачу!",
         en: "Try your luck!",
     },
-    "let's-play": {
+    "lets-play": {
         ru: "Ну что, сыграем в игру :)",
         en: "So, let's play a game :)",
     },
@@ -108,4 +107,8 @@ const langArr = {
         ru: "Выбрать номер телефона",
         en: "Choose phone number",
     },
+    "sushi-restaurant":{
+        ru: "Магазин суши",
+        en: "Sushi restaurant",
+    }
 };

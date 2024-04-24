@@ -1,151 +1,172 @@
 <!DOCTYPE html>
 <html lang="ru en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title id="lng-my-website">Сайт Вадима Лобанова</title>
-        <link
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title class="lng-my-website">Сайт Вадима Лобанова</title>
+    <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
             rel="stylesheet"
             integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
             crossorigin="anonymous"
-        />
-        <link rel="stylesheet" href="CSS/style.css" />
-        <link rel="stylesheet" href="CSS/darkMode.css" />
-        <link rel="stylesheet" href="CSS/languages.css" />
-        <style>
-            .rounded-img {
-                width: 75%;
-                height: auto;
-                border-radius: 7%;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-                margin-bottom: 1em;
-            }
-        </style>
-        <script
+    />
+    <link rel="stylesheet" href="CSS/style.css"/>
+    <link rel="stylesheet" href="CSS/header.css"/>
+    <style>
+        .rounded-img {
+            width: 75%;
+            height: auto;
+            border-radius: 7%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+            margin-bottom: 1em;
+        }
+    </style>
+    <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
             crossorigin="anonymous"
-        ></script>
-        <script src="JS/darkMode.js" defer></script>
-        <script src="JS/text.js" defer></script>
-        <script src="JS/languageApp.js" defer></script>
-        <link
+    ></script>
+    <script src="JS/darkMode.js" defer></script>
+    <script src="JS/text.js" defer></script>
+    <script src="JS/languageApp.js" defer></script>
+    <script>
+        // window.addEventListener("DOMContentLoaded", () => {
+        //     const elements = document.querySelectorAll(
+        //         "#lng-Linked-In, #lng-Head-Hunter"
+        //     );
+        //     let isButtonSmall = false;
+        //
+        //     toggleButtonSize();
+        //
+        //     window.addEventListener("resize", () => {
+        //         toggleButtonSize();
+        //     });
+        //
+        //     function toggleButtonSize() {
+        //         const screenWidth = window.innerWidth;
+        //
+        //         if (screenWidth <= 767 && !isButtonSmall) {
+        //             elements.forEach((element) => {
+        //                 element.classList.add("btn-sm");
+        //             });
+        //             isButtonSmall = true;
+        //         } else if (screenWidth > 767 && isButtonSmall) {
+        //             elements.forEach((element) => {
+        //                 element.classList.remove("btn-sm");
+        //             });
+        //             isButtonSmall = false;
+        //         }
+        //     }
+        // });
+    </script>
+    <link
             rel="apple-touch-icon"
             sizes="180x180"
-            href="Photos_and_differentfiles/apple-touch-icon.png"
-        />
-        <link
+            href="assets/apple-touch-icon.png"
+    />
+    <link
             rel="icon"
             type="image/png"
             sizes="32x32"
-            href="Photos_and_differentfiles/favicon-32x32.png"
-        />
-        <link
+            href="assets/favicon-32x32.png"
+    />
+    <link
             rel="icon"
             type="image/png"
             sizes="16x16"
-            href="Photos_and_differentfiles/favicon-16x16.png"
-        />
-        <link
+            href="assets/favicon-16x16.png"
+    />
+    <link
             rel="manifest"
-            href="Photos_and_differentfiles/site.webmanifest"
+            href="assets/site.webmanifest"
+    />
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand p-0" href="index.html">
+            <img
+                    src="assets/Lobanoff.png"
+                    alt="LogoВо Вадима"
+                    width="125"
+                    id="logo"
+            />
+        </a>
+        <img
+                src="assets/ru_icon.png"
+                alt="russian language"
+                id="languageToggler"
         />
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand p-0" href="index.html">
-                    <img
-                        src="Photos_and_differentfiles/Lobanoff.png"
-                        alt="LogoВо Вадима"
-                        width="125"
-                        id="logo"
-                    />
-                </a>
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <img
+                src="assets/sun.png"
+                alt="Dark Mode Toggler"
+                id="darkModeToggler"
+        />
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a
+                            class="nav-link active lng-main-page"
+                            aria-current="page"
+                            href="index.html"
+                    >Главная</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a
+                            class="nav-link lng-about-me"
+                            href="about_me.html"
+                    >Обо мне</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a
+                            class="nav-link lng-my-projects"
+                            aria-current="page"
+                            href="myprojects.html"
+                    >Мои проекты</a
+                    >
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<main>
+    <div class="container text-center my-5">
+        <div class="row">
+            <div class="col-lg-6 col-md-8 mx-auto">
                 <img
-                    src="Photos_and_differentfiles/ru_icon.png"
-                    alt="russian language"
-                    id="languageToggler"
+                        src="assets/Аватарка_портфолио.JPG"
+                        class="rounded-img"
+                        alt="Вадим Лобанов"
                 />
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav"
-                    aria-controls="navbarNav"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <img
-                    src="Photos_and_differentfiles/sun.png"
-                    alt="sun"
-                    id="darkModeToggler"
-                />
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a
-                                class="nav-link active"
-                                aria-current="page"
-                                href="index.html"
-                                id="lng-main-page"
-                                >Главная</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a
-                                class="nav-link"
-                                href="about_me.html"
-                                id="lng-about-me"
-                                >Обо мне</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a
-                                class="nav-link"
-                                aria-current="page"
-                                href="myprojects.html"
-                                id="lng-my-projects"
-                                >Мои проекты</a
-                            >
-                        </li>
-                    </ul>
+                <h1 class="fw-light lng-my-name">Вадим Лобанов</h1>
+                <p class="lead text-muted">Frontend Developer</p>
+                <div class="contact-icons">
+                    <a href="https://github.com/Vadoc1337" class="contact-icon" target="_blank">
+                        <img src="/assets/github_logo.png" alt="Мой гит">
+                    </a>
+                    <a href="https://hh.ru/applicant/resumes/view?resume=6c39ce00ff0d1c45880039ed1f596938413541" class="contact-icon" target="_blank">
+                        <img src="/assets/hh_logo.png" alt="Мое резюме на hh.ru">
+                    </a>
+                    <a href="https://t.me/Vadick_1337" class="contact-icon" target="_blank">
+                        <img src="/assets/tg_logo.png" alt="Мой тг">
+                    </a>
                 </div>
             </div>
-        </nav>
-        <main>
-            <div class="container text-center my-5">
-                <div class="row">
-                    <div class="col-lg-6 col-md-8 mx-auto">
-                        <img
-                            src="Photos_and_differentfiles/Аватарка_портфолио.JPG"
-                            class="rounded-img"
-                            alt="Вадим Лобанов"
-                        />
-                        <h1 class="fw-light" id="lng-my-name">Вадим Лобанов</h1>
-                        <p class="lead text-muted">Frontend-developer</p>
-                        <a
-                            href="https://hh.ru/"
-                            target="_blank"
-                            class="btn btn-success"
-                            id="lng-Head-Hunter"
-                        >
-                            Профиль на HeadHunter
-                        </a>
-                        <a
-                            href="https://www.linkedin.com/"
-                            target="_blank"
-                            class="btn btn-primary"
-                            id="lng-Linked-In"
-                        >
-                            Профиль на LinkedIn
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </main>
-    </body>
+        </div>
+    </div>
+</main>
+</body>
 </html>

@@ -1,0 +1,6 @@
+{
+  "name": "website-portfolio",
+  "devDependencies": {
+    "eslint": "^8.40.0"
+  }
+}

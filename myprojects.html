@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title id="lng-projects">Мои проекты</title>
+        <title class="lng-my-projects">Мои проекты</title>
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
             rel="stylesheet"
@@ -11,14 +11,35 @@
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="CSS/style.css" />
-        <link rel="stylesheet" href="CSS/darkMode.css" />
-        <link rel="stylesheet" href="CSS/languages.css" />
+        <link rel="stylesheet" href="CSS/header.css" />
         <style>
             .card {
+                height: 100%;
+            }
+            .card-body {
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                flex-direction: column;
                 text-align: center;
+            }
+            @media (min-width: 768px) {
+                .fortune-img {
+                    align-self: center;
+                    width: 12.5rem;
+                    height: 12.5rem;
+                }
+            }
+            @media (max-width: 767px) {
+                .fortune-img {
+                    align-self: center;
+                    width: 19rem;
+                    height: 19rem;
+                }
             }
             .card:hover {
                 background-color: rgba(0, 0, 0, 0.1);
+                transition: all ease-in-out 0.15s;
             }
         </style>
         <script
@@ -32,23 +53,23 @@
         <link
             rel="apple-touch-icon"
             sizes="180x180"
-            href="Photos_and_differentfiles/apple-touch-icon.png"
+            href="assets/apple-touch-icon.png"
         />
         <link
             rel="icon"
             type="image/png"
             sizes="32x32"
-            href="Photos_and_differentfiles/favicon-32x32.png"
+            href="assets/favicon-32x32.png"
         />
         <link
             rel="icon"
             type="image/png"
             sizes="16x16"
-            href="Photos_and_differentfiles/favicon-16x16.png"
+            href="assets/favicon-16x16.png"
         />
         <link
             rel="manifest"
-            href="Photos_and_differentfiles/site.webmanifest"
+            href="assets/site.webmanifest"
         />
     </head>
     <body>
@@ -56,14 +77,14 @@
             <div class="container">
                 <a class="navbar-brand p-0" href="index.html">
                     <img
-                        src="Photos_and_differentfiles/Lobanoff.png"
+                        src="assets/Lobanoff.png"
                         alt="LogoВо Вадима"
                         width="125"
                         id="logo"
                     />
                 </a>
                 <img
-                    src="Photos_and_differentfiles/ru_icon.png"
+                    src="assets/ru_icon.png"
                     alt="russian language"
                     id="languageToggler"
                 />
@@ -79,35 +100,32 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <img
-                    src="Photos_and_differentfiles/sun.png"
-                    alt="sun"
+                    src="assets/sun.png"
+                    alt="Dark Mode Toggler"
                     id="darkModeToggler"
                 />
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a
-                                class="nav-link"
+                                class="nav-link lng-main-page"
                                 aria-current="page"
                                 href="index.html"
-                                id="lng-main-page"
                                 >Главная</a
                             >
                         </li>
                         <li class="nav-item">
                             <a
-                                class="nav-link"
+                                class="nav-link lng-about-me"
                                 href="about_me.html"
-                                id="lng-about-me"
                                 >Обо мне</a
                             >
                         </li>
                         <li class="nav-item">
                             <a
-                                class="nav-link active"
+                                class="nav-link active lng-my-projects"
                                 aria-current="page"
                                 href="myprojects.html"
-                                id="lng-my-projects"
                                 >Мои проекты</a
                             >
                         </li>
@@ -116,43 +134,43 @@
             </div>
         </nav>
         <main>
-            <div class="container my-5">
+            <div class="container my-4">
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
                     <section class="col">
                         <div class="card">
                             <img
-                                src="Photos_and_differentfiles/Phone_number.jpeg"
-                                class="card-img-top"
+                                src="assets/Phone_number.jpeg"
                                 alt="Генератор номера телефона"
+                                class="card-img-top"
                             />
                             <div class="card-body">
-                                <h5 class="card-title" id="lng-phone-generator">
+                                <h5 class="card-title lng-phone-generator">
                                     Генератор номера телефона (с сюрпризом)
                                 </h5>
-                                <a
-                                    href="PhoneNumber.html"
-                                    class="btn btn-primary"
-                                    id="lng-try-btn"
-                                    >Попробовать</a
-                                >
+                                <div>
+                                    <a
+                                        href="PhoneNumber.html"
+                                        class="btn btn-primary lng-try-btn"
+                                        >Попробовать</a
+                                    >
+                                </div>
                             </div>
                         </div>
                     </section>
                     <section class="col">
                         <div class="card">
                             <img
-                                src="Photos_and_differentfiles/fortune_wheel.jpeg"
-                                class="card-img-top"
+                                src="assets/fortune_wheel.png"
+                                class="fortune-img card-img-top"
                                 alt="Колесо Фортуны"
                             />
                             <div class="card-body">
-                                <h5 class="card-title" id="lng-fortune-wheel">
+                                <h5 class="card-title lng-fortune-wheel">
                                     Колесо Фортуны
                                 </h5>
                                 <a
                                     href="wheel.html"
-                                    class="btn btn-warning"
-                                    id="lng-luck-btn"
+                                    class="btn btn-warning lng-luck-btn"
                                     >Испытать удачу!</a
                                 >
                             </div>
@@ -161,28 +179,60 @@
                     <section class="col">
                         <div class="card">
                             <img
-                                src="Photos_and_differentfiles/notaryWebsite.png"
-                                class="card-img-top"
+                                src="assets/notaryWebsite.png"
                                 alt="Сайт нотариуса"
+                                class="card-img-top"
                             />
                             <div class="card-body">
-                                <h5 class="card-title" id="lng-notary-website">
+                                <h5 class="card-title lng-notary-website">
                                     Сайт нотариуса
                                 </h5>
-                                <a
-                                    href="https://notarymen.ru"
-                                    target="_blank"
-                                    class="btn btn-lg btn-danger"
-                                    id="lng-site-btn"
+                                <div>
+                                    <a
+                                        href="https://notarymen.ru"
+                                        target="_blank"
+                                        class="btn btn-lg btn-danger lng-site-btn"
+                                        >Сайт</a
+                                    >
+                                    <button class="btn">
+                                        <a
+                                            href="https://github.com/Vadoc1337/utils-notary-site"
+                                            target="_blank"
+                                            class="btn btn-lg btn-dark lng-git-btn"
+                                            >Гит</a
+                                        >
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col">
+                        <div class="card">
+                            <img
+                                    src="assets/sushi_restaurant.png"
+                                    alt="Магазин суши"
+                                    class="card-img-top"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title lng-sushi-restaurant">
+                                    Магазин суши
+                                </h5>
+                                <div>
+                                    <a
+                                            href="https://sushi-heaven.vercel.app/"
+                                            target="_blank"
+                                            class="btn btn-lg btn-danger lng-site-btn"
                                     >Сайт</a
-                                >
-                                <a
-                                    href="https://github.com/Vadoc1337/Notary-Website"
-                                    target="_blank"
-                                    class="btn btn-lg btn-dark"
-                                    id="lng-git-btn"
-                                    >Гит</a
-                                >
+                                    >
+                                    <button class="btn">
+                                        <a
+                                                href="https://github.com/Vadoc1337/sushi-heaven"
+                                                target="_blank"
+                                                class="btn btn-lg btn-dark lng-git-btn"
+                                        >Гит</a
+                                        >
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </section>

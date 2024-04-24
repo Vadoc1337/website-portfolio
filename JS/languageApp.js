@@ -24,20 +24,23 @@ function updateLanguage(lang) {
 // Change flag icon based on the current language
 function changeFlagIcon() {
     getCurrentLanguage() === "en"
-        ? (imgElement.src = "Photos_and_differentfiles/en_icon.png")
-        : (imgElement.src = "Photos_and_differentfiles/ru_icon.png");
+        ? (imgElement.src = "assets/en_icon.png")
+        : (imgElement.src = "assets/ru_icon.png");
 }
 
 // Redirect to the default language if the hash is not valid
 function changeLanguage() {
     let lang = getCurrentLanguage();
     Object.keys(langArr).forEach((key) => {
-        let elem = document.getElementById("lng-" + key);
-        if (elem && langArr[key][lang] !== undefined) {
-            elem.innerHTML = langArr[key][lang];
-        }
+        let elems = document.querySelectorAll(".lng-" + key);
+        elems.forEach(elem => {
+            if (langArr[key][lang] !== undefined) {
+                elem.innerHTML = langArr[key][lang];
+            }
+        });
     });
 }
+
 
 changeFlagIcon();
 changeLanguage();

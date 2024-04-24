@@ -2,7 +2,7 @@
 <html lang="ru en">
     <head>
         <meta charset="UTF-8" />
-        <title id="lng-let's-play">Ну что, сыграем в игру :)</title>
+        <title class="lng-lets-play">Ну что, сыграем в игру :)</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -11,39 +11,38 @@
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="CSS/style.css" />
-        <link rel="stylesheet" href="CSS/wheelstyle.css" />
-        <link rel="stylesheet" href="CSS/darkMode.css" />
-        <link rel="stylesheet" href="CSS/languages.css" />
+        <link rel="stylesheet" href="CSS/wheelStyle.css" />
+        <link rel="stylesheet" href="CSS/header.css" />
         <style></style>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
             crossorigin="anonymous"
         ></script>
-        <script src="JS/wheelscript.js" defer></script>
+        <script src="JS/wheelScript.js" defer></script>
         <script src="JS/darkMode.js" defer></script>
         <script src="JS/text.js" defer></script>
         <script src="JS/languageApp.js" defer></script>
         <link
             rel="apple-touch-icon"
             sizes="180x180"
-            href="Photos_and_differentfiles/apple-touch-icon.png"
+            href="assets/apple-touch-icon.png"
         />
         <link
             rel="icon"
             type="image/png"
             sizes="32x32"
-            href="Photos_and_differentfiles/favicon-32x32.png"
+            href="assets/favicon-32x32.png"
         />
         <link
             rel="icon"
             type="image/png"
             sizes="16x16"
-            href="Photos_and_differentfiles/favicon-16x16.png"
+            href="assets/favicon-16x16.png"
         />
         <link
             rel="manifest"
-            href="Photos_and_differentfiles/site.webmanifest"
+            href="assets/site.webmanifest"
         />
     </head>
     <body>
@@ -51,14 +50,14 @@
             <div class="container">
                 <a class="navbar-brand p-0" href="index.html">
                     <img
-                        src="Photos_and_differentfiles/Lobanoff.png"
+                        src="assets/Lobanoff.png"
                         alt="LogoВо Вадима"
                         width="125"
                         id="logo"
                     />
                 </a>
                 <img
-                    src="Photos_and_differentfiles/ru_icon.png"
+                    src="assets/ru_icon.png"
                     alt="russian language"
                     id="languageToggler"
                 />
@@ -74,35 +73,32 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <img
-                    src="Photos_and_differentfiles/sun.png"
-                    alt="sun"
+                    src="assets/sun.png"
+                    alt="Dark Mode Toggler"
                     id="darkModeToggler"
                 />
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a
-                                class="nav-link"
+                                class="nav-link lng-main-page"
                                 aria-current="page"
                                 href="index.html"
-                                id="lng-main-page"
                                 >Главная</a
                             >
                         </li>
                         <li class="nav-item">
                             <a
-                                class="nav-link"
+                                class="nav-link lng-about-me"
                                 href="about_me.html"
-                                id="lng-about-me"
                                 >Обо мне</a
                             >
                         </li>
                         <li class="nav-item">
                             <a
-                                class="nav-link active"
+                                class="nav-link active lng-my-projects"
                                 aria-current="page"
                                 href="myprojects.html"
-                                id="lng-my-projects"
                                 >Мои проекты</a
                             >
                         </li>
@@ -120,13 +116,12 @@
                 <!-- кнопка -->
                 <button
                     type="button"
-                    class="btn btn-primary btn-spin"
+                    class="btn btn-primary btn-spin lng-button-bet"
                     style="
                         --bs-btn-padding-y: 0.9rem;
                         --bs-btn-padding-x: 1rem;
                         --bs-btn-font-size: 1.2em;
                     "
-                    id="lng-button-bet"
                 >
                     СТАВЛЮ НА КОН ВСЕ ЧТО У МЕНЯ ЕСТЬ
                 </button>
